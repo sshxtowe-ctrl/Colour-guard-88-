@@ -279,8 +279,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-            let data =
-            getData();
+            let data = getData();
 
 
 
