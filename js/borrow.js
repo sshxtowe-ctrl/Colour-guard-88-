@@ -1,4 +1,5 @@
-const storageKey = "cg_borrow";
+alert("borrow js ทำงาน");
+constt storageKey = "cg_borrow";
 
 
 document.addEventListener("DOMContentLoaded", function(){
