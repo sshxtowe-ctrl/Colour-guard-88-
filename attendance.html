@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COLOUR GUARD 88 - เช็คชื่อประจำวัน</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+input,select,button{
+
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+
+}
+
+
+button{
+
+    background:#2196f3;
+    color:white;
+    border:none;
+    cursor:pointer;
+
+}
+
+
+.delete-btn{
+
+    background:#e53935;
+
+}
+
+
+.record{
+
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+
+}
+
+
+.empty{
+
+    text-align:center;
+    color:#888;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+✅ ระบบเช็คชื่อประจำวัน
+</h1>
+
+
+
+<div class="card">
+
+
+<h2>
+ประวัติการเช็คชื่อ
+</h2>
+
+
+<div id="attendanceList">
+
+<p class="empty">
+ยังไม่มีข้อมูล
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+เพิ่มการเช็คชื่อ
+</h2>
+
+
+
+<label>
+ชื่อ
+</label>
+
+
+<select id="studentName">
+
+
+<option value="">
+-- เลือกชื่อ --
+</option>
+
+
+<option>ช้างน้อย</option>
+<option>หนิง</option>
+<option>มีนา</option>
+<option>ญาดา</option>
+<option>ต้นหอม</option>
+<option>ข้าวหอม</option>
+<option>แหวน</option>
+<option>โมจิ</option>
+<option>นิวตรอน</option>
+<option>แพง</option>
+<option>แป้งหวาน</option>
+
+
+</select>
+
+
+
+
+<label>
+สถานะ
+</label>
+
+
+<select id="status">
+
+
+<option value="">
+-- เลือกสถานะ --
+</option>
+
+
+<option>
+มา
+</option>
+
+<option>
+สาย
+</option>
+
+<option>
+ลา
+</option>
+
+<option>
+ขาด
+</option>
+
+
+</select>
+
+
+
+
+
+<label>
+วันที่
+</label>
+
+
+<input
+type="date"
+id="date">
+
+
+
+
+
+<button id="saveAttendance">
+
+บันทึกเช็คชื่อ
+
+</button>
+
+
+
+
+</div>
+
+
+
+</div>
