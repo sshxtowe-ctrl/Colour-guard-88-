@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOUR GUARD 88 - ระบบบันทึกการยืมอุปกรณ์</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,Helvetica,sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            padding:20px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .card{
+            background:#fff;
+            border-radius:12px;
+            padding:20px;
+            margin-bottom:20px;
+            box-shadow:0 2px 8px rgba(0,0,0,.1);
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        .borrow-item{
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:15px;
+            margin-bottom:12px;
+        }
+
+        .borrow-item p{
+            margin:6px 0;
+        }
+
+        button{
+            padding:10px 18px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:15px;
+        }
+
+        .delete-btn{
+            background:#e53935;
+            color:white;
+            margin-top:10px;
+        }
+
+        .save-btn{
+            background:#2196f3;
+            color:white;
+            width:100%;
+            margin-top:15px;
+        }
+
+        input,
+        select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        .empty{
+            color:#888;
+            text-align:center;
+        }
+
+        @media(max-width:600px){
+
+            body{
+                padding:10px;
+            }
+
+            .card{
+                padding:15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>📦 ระบบบันทึกการยืมอุปกรณ์</h1>
+
+<div class="card">
+
+<h2>ประวัติการยืม</h2>
+
+<div id="borrowList">
+
+<p class="empty">ยังไม่มีข้อมูล</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>เพิ่มรายการ</h2>
+
+<label>ชื่อ</label>
+
+<select id="name">
+
+<option value="">-- เลือกชื่อ --</option>
+
+<option>ช้างน้อย</option>
+<option>หนิง</option>
+<option>มีนา</option>
+<option>ญาดา</option>
+<option>ต้นหอม</option>
+<option>ข้าวหอม</option>
+<option>แหวน</option>
+<option>โมจิ</option>
+<option>นิวตรอน</option>
+<option>แพง</option>
+<option>แป้งหวาน</option>
+
+</select>
+
+<label>สิ่งที่ยืม</label>
+
+<input
+type="text"
+id="item"
+placeholder="เช่น ธงสีฟ้า">
+
+<label>วันที่ยืม</label>
+
+<input
+type="date"
+id="borrowDate">
+
+<label>วันที่คืน</label>
+
+<input
+type="date"
+id="returnDate">
+
+<button
+class="save-btn"
+id="saveBorrow">
+
+บันทึก
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/borrow.js"></script>
+
+</body>
+</html>
